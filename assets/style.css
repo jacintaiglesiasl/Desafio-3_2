@@ -16,14 +16,28 @@ body {
     "footer"; 
 
     .item-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 20px;
+        display: none;
     }
+    
+    .item-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    } 
 
 .item {
     display: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pages {
+    margin-bottom: 36px;
 }
 }
 }
@@ -43,13 +57,20 @@ body {
         display: none;
     }
 
+    .item-mobile {
+        display: none;
+    }
+    
     .item-main {
         grid-area: main;
-        background-color: white;
-        background-image: url(./imgs/BG-main.png);
         display: grid;
         grid-template-columns: auto auto auto;
         justify-content: center;
+        margin-top: 20px;
+    }
+
+    .pages {
+        margin-top: 20px;
     }
 }
     }
